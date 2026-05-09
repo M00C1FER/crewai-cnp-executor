@@ -10,7 +10,7 @@ from .budget import BudgetTracker
 
 try:
     from contract_net_router import ContractState as RouterContractState
-except Exception:
+except ImportError:
     RouterContractState = None
 
 

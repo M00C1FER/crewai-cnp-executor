@@ -15,7 +15,6 @@ class CrewAIBidderAdapter:
 
     def bid(self, task: str) -> Decimal:
         """Return bid amount for the task."""
-        _ = task
         return self.bid_price
 
     def execute(self, task: str) -> str:
